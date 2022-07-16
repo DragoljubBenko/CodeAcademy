@@ -31,19 +31,19 @@
   }
 }
 /* Tried with % and from to;
-This Keyframes was for the 4th box to move left while 3rd box move right, but due to wrong save file lost. */
+    This Keyframes was for the 4th box to move left while 3rd box move right, but due to wrong save file lost. */
 /* @keyframes boxTranslateA {
-  0% {
-    transform: translateZ(50px);
-    width: 200px;
-    height: 200px;
-  }
-  100% {
-    transform: translateZ(50px);
-    width: 300px;
-    height: 300px;
-  }
-} */
+      0% {
+        transform: translateZ(50px);
+        width: 200px;
+        height: 200px;
+      }
+      100% {
+        transform: translateZ(50px);
+        width: 300px;
+        height: 300px;
+      }
+    } */
 /* works with -90deg also but still have some erorrs. Added transition 2s no more errors. */
 div:hover {
   width: 100px;
@@ -66,11 +66,11 @@ div {
   animation: rotateAnimation 5s linear infinite;
 }
 /*Removed not part of the homework
-#spanOne:hover {
-    background-color: rgb(17, 15, 15);
-    width: 300px;
-    transform: rotate(45deg);
-  } */
+    #spanOne:hover {
+        background-color: rgb(17, 15, 15);
+        width: 300px;
+        transform: rotate(45deg);
+      } */
 #spanTwo {
   float: left;
 
@@ -112,6 +112,7 @@ div {
   animation-delay: 2s;
   transition-duration: 3s;
 }
+
 /* 2nd file for CUBES.HTML CSS  */
 body {
   background-color: cornsilk;
