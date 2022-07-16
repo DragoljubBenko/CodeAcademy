@@ -19,7 +19,6 @@
   }
 }
 @keyframes boxAnimation {
-  /* Tried with from to  */
   from {
     transform: translateZ(100px);
     width: 200px;
@@ -31,8 +30,9 @@
     height: 300px;
   }
 }
-/* Tried with % */
-@keyframes boxTranslateA {
+/* Tried with % and from to;
+This Keyframes was for the 4th box to move left while 3rd box move right, but due to wrong save file lost. */
+/* @keyframes boxTranslateA {
   0% {
     transform: translateZ(50px);
     width: 200px;
@@ -43,41 +43,53 @@
     width: 300px;
     height: 300px;
   }
-}
-/* works with 90deg also but still have some erorrs. Added transition 2s no more errors. */
-.mainDiv:hover {
-  transform: rotateZ(80deg);
+} */
+/* works with -90deg also but still have some erorrs. Added transition 2s no more errors. */
+div:hover {
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(-80deg);
   transition: 2s;
 }
-
+div {
+  float: none;
+  width: 100px;
+  height: 100px;
+}
 /* all span elements are with 100px and height 200px*/
 #spanOne {
+  float: left;
+
   background-color: red;
   width: 100px;
-  height: 200px;
+  height: 100px;
   animation: rotateAnimation 5s linear infinite;
 }
 /*Removed not part of the homework
 #spanOne:hover {
-      background-color: rgb(17, 15, 15);
-      width: 300px;
-      transform: rotate(45deg);
-    } */
+    background-color: rgb(17, 15, 15);
+    width: 300px;
+    transform: rotate(45deg);
+  } */
 #spanTwo {
+  float: left;
+
   background-color: rgb(12, 22, 107);
   width: 100px;
-  height: 200px;
+  height: 100px;
   animation: bounce 3s infinite;
 }
 #spanThree:hover {
-  animation-name: boxTranslateA 3s;
+  /* animation-name: boxTranslateA 3s; */
   background-color: rgb(17, 15, 15);
   width: 300px;
 }
 #spanThree {
+  float: left;
+
   background-color: rgb(35, 161, 21);
   width: 100px;
-  height: 200px;
+  height: 100px;
   animation-name: boxAnimation;
   animation-duration: 3s;
   animation-delay: 2s;
@@ -85,21 +97,26 @@
 }
 /* Tried with hover still canot made them to swap places */
 #spanFour:hover {
-  animation-name: boxAnimation 3s;
+  /* animation-name: boxAnimation 3s; */
   background-color: rgb(17, 15, 15);
   width: 300px;
 }
 /* /*  SpanThree moves to SpanFour with animation name box Animation, but SpanFourwit animation name boxTranslateA is fixed! Added as a comment. */
 #spanFour {
+  float: left;
   background-color: rgb(248, 244, 10);
   width: 100px;
-  height: 200px;
-  animation-name: boxTranslateA;
+  height: 100px;
+  /* animation-name: boxTranslateA; */
   animation-duration: 3;
   animation-delay: 2s;
   transition-duration: 3s;
 }
 /* 2nd file for CUBES.HTML CSS  */
+body {
+  background-color: cornsilk;
+  position: absolute;
+}
 article {
   margin: 0%;
   padding: 0%;
@@ -139,15 +156,11 @@ article {
   background-color: green;
   width: 250px;
 }
-
 .classThree {
   background-color: pink;
+
   margin: 10px;
   padding: 38px;
   float: left;
   border: 100px;
-}
-body {
-  background-color: cornsilk;
-  position: absolute;
 }
