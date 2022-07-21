@@ -28,20 +28,21 @@
         }
         100% {
           transform: translateX(1000px) rotate(360deg);
-      
         }
         /* Kako ovie dve animacii posle Duration da ostanat fiksni na stranata? */
       }
 
       #dice-one {
         animation: firstAnimation;
-        animation-duration: 4s;
         animation-delay: 3s;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
       }
       #dice-two {
         animation: secondAnimation;
         animation-delay: 15s;
         animation-duration: 4s;
+        animation-fill-mode: forwards;
       }
     </style>
   </head>
