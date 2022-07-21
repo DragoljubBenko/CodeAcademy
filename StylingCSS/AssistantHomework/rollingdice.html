@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .rolling-dice {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        border: 10px chocolate;
+        margin: 10px;
+      }
+
+      @keyframes firstAnimation {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(1000px);
+        }
+      }
+      @keyframes secondAnimation {
+        0% {
+          transform: translateX(0) rotate(0);
+        }
+        100% {
+          transform: translateX(1000px) rotate(360deg);
+      
+        }
+        /* Kako ovie dve animacii posle Duration da ostanat fiksni na stranata? */
+      }
+
+      #dice-one {
+        animation: firstAnimation;
+        animation-duration: 4s;
+        animation-delay: 3s;
+      }
+      #dice-two {
+        animation: secondAnimation;
+        animation-delay: 15s;
+        animation-duration: 4s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Dali moze vaka article da bide oznacen kako id i vo nego da ima dve isto klasi ?-->
+    <section>
+      <article id="dice-one" class="rolling-dice"></article>
+      <article id="dice-two" class="rolling-dice"></article>
+    </section>
+  </body>
+</html>
