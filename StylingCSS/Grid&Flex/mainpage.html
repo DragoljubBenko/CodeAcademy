@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/gridStyle.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -10,100 +11,7 @@
     />
     <title>MainPage</title>
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-      }
-      .footer{ width: 100%;
-        height: 80px;
-        text-align: center;
-        color: aliceblue;
-        background-color: black;
-        position: fixed;
-        z-index: 1;}
-      header {
-        width: 100%;
-        height: 80px;
-        text-align: center;
-        color: aliceblue;
-        background-color: black;
-        position: fixed;
-        z-index: 1;
-      }
-      .sidenav {
-        margin: 10px 0px 0px 0px;
-        padding: 10px 10px 10px 10px;
-        display: inline-grid;
-        grid-template-areas:
-          "services"
-          "about"
-          "clients"
-          "contact";
-        position: fixed;
-        width: 200px;
-        height: 100%;
-        background-color: rebeccapurple;
-        /* z-index: -1; */
-        align-content: space-around;
-      }
-
-      main {
-      background-color:red ;
-        height: 100%;
-        margin-left: 220px;
-        padding-top: 80px;
-      }#about:hover{ background-color: brown;}
-
-      #about {border-radius: 50%;
-        grid-area: about;
-       text-align: center;
-        background-color: aqua;
-      
-
-       
-      }
-      #services:hover{ background-color: brown;}
-      #services{border-radius: 50%;
-        grid-area: services;
-        background-color: aqua;
-       text-align: center;
-
-       
-      }
-      #clients:hover{ background-color: brown;}
-      #clients {border-radius: 50%;
-         text-align: center;
-        grid-area: clients;
-        background-color: aqua;
-        
-
-        
-      }
-      #contact:hover{ background-color: brown;}
-      #contact {border-radius: 50%;
-        grid-area: contact;
-        text-align: center;
-        background-color: aqua;
-        
-
-       
-      }
-      .name {
-        text-align: start;
-        display: grid;
-        padding: 30px;
-        border-width: 300px;
-        background-color: rgb(80, 36, 36);
-      }
-      .main-text {
-        padding: 30px;
-        border-width: 300px;
-        background-color: brown;
-        display: grid;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header>
@@ -111,132 +19,85 @@
     </header>
 
     <nav class="sidenav">
-      <a id="about" href="#about"><img src="" alt=""> About</a>
+      <a id="about" href="#about"> About</a>
       <a id="services" href="#services">Services</a>
       <a id="clients" href="#clients">Clients</a>
       <a id="contact" href="#contact">Contact</a>
     </nav>
     <main>
       <section class="main-text">
-        <section>
-          <article>
-            <h3 class="name">Services </h3>
-            <p class="text">
-              fonScroll down the page to see the result. Some text to enable
-              scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
-              maluisset concludaturque et eum, altera fabulas ut quo. Atqui
-              causae gloriatur ius te, id agam omnis evertitur eum. Affert
-              laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum
-              no molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibut-size: 25px;
-            </p>
-          </article>
-        </section>
-      </section> <section class="main-text">
-        <section>
-          <article>
-            <h3 class="name">About </h3>
-            <p class="text">
-              fonScroll down the page to see the result. Some text to enable
-              scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
-              maluisset concludaturque et eum, altera fabulas ut quo. Atqui
-              causae gloriatur ius te, id agam omnis evertitur eum. Affert
-              laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum
-              no molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibut-size: 25px;
-            </p>
-          </article>
-        </section>
-      </section>  <section class="main-text">
-        <section>
-          <article>
-            <h3 class="name">Clients</h3>
-            <p class="text">
-              fonScroll down the page to see the result. Some text to enable
-              scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
-              maluisset concludaturque et eum, altera fabulas ut quo. Atqui
-              causae gloriatur ius te, id agam omnis evertitur eum. Affert
-              laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum
-              no molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibut-size: 25px;
-            </p>
-          </article>
-        </section>
+        <a class="info">INFORMATION</a><a class="name">Services</a>
+
+        <a class="text-center">
+          fonScroll down the page to see the result. Some text to enable
+          scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+          maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae
+          gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+          repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+          voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor sit
+          amet, illum definitiones no quo, maluisset concludaturque et eum,
+          altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis
+          evertitur eum. Affert laboramus repudi altera fabulas ut quo. Atqui
+          causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+          repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+          voluptatibut-size: 25px;
+        </a>
       </section>
-    </section>  <section class="main-text">
-        <section>
-          <article>
-            <h3 class="name">Contact</h3>
-            <p class="text">
-              fonScroll down the page to see the result. Some text to enable
-              scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
-              maluisset concludaturque et eum, altera fabulas ut quo. Atqui
-              causae gloriatur ius te, id agam omnis evertitur eum. Affert
-              laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum
-              no molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibus. Some text to enable scrolling.. Lorem
-              ipsum dolor sit amet, illum definitiones no quo, maluisset
-              concludaturque et eum, altera fabulas ut quo. Atqui causae
-              gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
-              repudiandae nec et. Inciderint efficiantur his ad. Eum no
-              molestiae voluptatibut-size: 25px;
-            </p>
-          </article>
-        </section>
+      <section class="main-text">
+        <a class="info">INFORMATION</a>
+        <a class="name">About</a>
+
+        <a class="text-center">
+          fonScroll down the page to see the result. Some text to enable
+          scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+          maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae
+          gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+          repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+          voluptatibus. Some text to enable scrolling.. Lorem ipsum dolor
+          sitdolor sit amet, illum definitiones no quo, maluisset concludaturque
+          et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
+          omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+          efficiantur his ad. Eum no molestiae voluptatibus. Some text to enable
+          scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+          maluisset concl evertitur eum. Affert laboramus repudiandae nec et.
+          Inciderint efficiantur his ad. Eum no molestiae voluptatibut-size:
+          25px;
+        </a>
+      </section>
+      <section class="main-text">
+        <a class="info">INFORMATION</a>
+        <a class="name">Clients</a>
+
+        <a class="text-center">
+          fonScroll down the page to see the result. Some text to enable
+          scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,um
+          no molestiae voluptatibus. Some text to enable scrolling.. Lorem ipsum
+          dolor sit amet, illum definitiones no quo, maluisset concludaturque et
+          eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam
+          omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint
+          efficiantur his ad. Eum no molestiae voluptatibut-size: 25px;
+        </a>
+      </section>
+      <section class="main-text">
+        <a class="info">INFORMATION</a>
+        <a class="name">Contact</a>
+
+        <a class="text-center">
+          fonScroll down the page to see the result. Some text to enable
+          scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
+          maluisset concludaturque et eum, altera fabulas ut quo. Atqui
+          causaeciantur his ad. Eum no molestiae voluptatibus. Some text to
+          enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no
+          quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui
+          causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus
+          repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae
+          voluptatibut-size: 25px;
+        </a>
       </section>
     </main>
 
-    <footer> <h1 class="footer">BASIC INFORMATION</h1></footer>
+    <section class="footer">
+      <p>Footer</p>
+    </section>
   </body>
 </html>
