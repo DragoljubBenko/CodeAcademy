@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <link rel="stylesheet" href="styleGrid.css">  
+      <!-- napraveni se promeni na tie elementi od grid vo flex
+     <link rel="stylesheet" href="styleFlex.css">  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootstrapFile</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   <!-- dodaden bootstrap link od w3 school za da mozat da se koristat slednite classi i kodovi vo html. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  </head>
+
+
+
+  <body>
+    <style>
+    
+ /* fiksen header so visina 40px i so pogolem z index bidejki sidebarot bese pred nego */
+ #header {
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    border: 1px solid red;
+  }
+  /* fiksen footer so visina 40 px */
+  #footer {
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    bottom: 0%;
+    left: 0%;
+    border: 1px solid red;
+  }
+  /* fiksen sidebar so visina 100% za nad i pod footer i header */
+  .sidebar {
+    top: 0px;
+    position: fixed;
+    width: 150px;
+    height: 811px;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 20px 50px 50px; */
+    left: 0%;
+    border: 1px solid red;
+  }
+  /* nav bar e del od navigaciskoto meni za da bide pod footerot za 40px */
+  .nav-bar {padding: 10px 10px 10px 10px;
+    margin-top: 40px;
+  }
+  /* celataa pozadina na main kade sto ima class background main za da se dobie display grid.(sega display flex)
+   oddeleni od top i botom kolku sto e header i footer, i dadena height 1251px bidejki tolku mi e dovolno za stranata 
+   */
+  
+  .background-main {
+    background-color: brown;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: solid black 2px;
+    height: 1251px;
+    margin-left: 200px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* section class e za imeto i slikata vo grid(sega vo flex so istite dimenzii) da gi razdelam so 112px i 132px spored Inspect Tools za da izgledaat pubavo. */
+  .section {
+    top: 0%;
+    display: flex;
+    flex-shrink: 112px 132px;
+  }
+  .bacground-text {
+    height: fit-content;
+    left: 200px;
+  }
+  
+  .bacground-title {
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .alltogether {width: fit-content;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+  }
+    </style>
+    <header id="header">Calisthenics</header>
+
+    <main>
+      <sidebar class="sidebar"> 
+        <section class="nav-bar"> 
+            <!-- napraveni verticalni nav bar  -->
+          <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary"  link rel="stylesheet" href="home"> home
+              <button type="button" class="btn btn-primary" link rel="stylesheet" href="home"> about
+                <button type="button" class="btn btn-primary" link rel="stylesheet" href="home"> contact </div>
+      </section> </sidebar>
+
+      <section class="background-main">
+        <div class="row">
+       <div class="alltogether">
+
+        <div class="section">
+          <!-- na image profile dodadeno class img-circle za da bide vo forma na krug -->
+          <figure class="img"> <img width="50px" height="50px" src="OIP.jpg" class="img-circle" alt= " ">
+           </figure>
+            <figcaption class="name">                       
+               <p class="bg-danger">Tom Lee</p>
+              <p>1h ago &#8226; Skopje</p>
+            </figcaption>
+            </div>
+          <!-- neznam dali e pravilno   na blockquote da e dodadeno class well. -->
+          <div class="background-title"><blockquote class="well">  What is calisthenics?</blockquote></div>
+          <img width="500px" height="200px" src="calis.jpg">
+          <div class="background-text"><h3>Calisthenics is a type of workout that<small> uses a person’s body weight with little or no equipment.</small></h3>
+
+            The exercises involve movements that use large muscle groups, such as pushups. People typically perform these exercises at a moderate pace. They help to improve coordination, flexibility, and strength.
+            
+            Calisthenics originated in Ancient Greece and remains popular today. Most people can perform these exercises, regardless of the level of their athletic ability. Many of them do not require any equipment.</div>
+      
+      </div></div>
+
+
+   
+<div class="alltogether">
+  <div class="section">
+    <!-- Napravena obicna tabela so pomos na Bootstrap. -->
+  <table  class="table table-bordered"><tr><th>
+            <figure class="img"> <img width="50px" height="50px" src="R.jpg" alt= " ">
+            </figure></th>
+             <th> <figcaption class="name">    
+              <!-- imeto na class e so bg-danger.                    -->
+                 <p class="bg-danger">Ming Sy Lee</p></th><th>
+                <p>3h ago &#8226; Veles</p></th>
+              </figcaption></tr>
+             <tr></div>
+              <!-- naslovot e naznacen so blockquote i dodadeno code. na blockquote ima dodadeno class kako vo primerot pogore -->
+           <td> <div class="background-title"><blockquote class="alert alert-success"><code>Macedonian flag</code></blockquote></div></td>
+          <td> <img width="400px" height="400px" src="R (1).jpg"></td> 
+           <td> <div class="background-text"> Calisthenics? </td>
+        </div></div>
+   
+      
+      </tr>    </table>
+      </div> </section>
+    </main>
+
+    <footer  id="footer">Dragoljub Benko </footer>
+  </body>
+</html>
