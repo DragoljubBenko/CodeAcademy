@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex And grid usage</title>
+    <style>
+      header {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1200px auto;
+        align-content: center;
+      }
+      h1 {
+        padding-left: 50px;
+        padding-top: 10px;
+      }
+
+      nav {
+        padding-left: 20px;
+        padding-top: 40px;
+      }
+      main{height: 1100px 
+        ; width: 100%;}
+      .sectionBackgroundFirst {
+        margin-bottom: 10px;
+        border: solid 1px black;
+        width: auto;
+        grid-gap: 40px;
+        display: grid;
+        grid-template-rows: 100px 100px;
+        height: 250px;
+        background-color: aqua;
+      }
+      .articleNr1 {
+        margin: 10px 200px;
+        margin-bottom: 10px;
+        border: solid 1px black;
+      }
+      .articleNr2 {
+        margin: 10px 50px;
+        border: solid 1px black;
+      }
+      .sectionBackgroundSecond {
+        margin-top: 20px;
+        border: solid 1px black;
+        background-color: aquamarine;
+        width: auto;
+        /* grid-gap: 40px; */
+        display: grid;
+        grid-template-rows: 100px 100px;
+
+        height: 250px;
+      }
+      .naslov {
+        margin: 10px 50px;
+        height: fit-content;
+        width: fit-content;
+        border: solid 1px black;
+      }
+      .naslov2 {
+        margin: 10px 50px;
+        height: fit-content;
+        width: fit-content;
+        border: solid 1px black;
+      }
+      .btn {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        align-items: stretch;
+        justify-content: flex-end;
+        display: flex;
+      }
+      .sectionBackgroundThird {
+       
+        margin-top: 20px ;margin-bottom: 200px;
+        border: solid 1px black;
+        background-color: aquamarine;
+        width: auto;
+        /* grid-gap: 40px; */
+        display: grid;
+        grid-template-rows: 100px 100px;
+
+        height: 250px;
+      }
+      /* .naslovOne od .sectionBackgroundThird e pomesten na dr strana so justify-self :end */
+      .naslovOne {justify-self: end;
+        margin: 10px 50px;
+        height: fit-content;
+        width: fit-content;
+        border: solid 1px black;
+      }
+      .naslovTwo {
+        margin: 10px 50px;
+        height: fit-content;
+        width: fit-content;
+        border: solid 1px black;
+      }
+      .btnSecond {
+        margin-left: 20px;
+        margin-bottom: 40px;
+
+        justify-content: flex-start;
+     
+      } footer{ z-index: 1; text-align: center; height: 40px;width: 100%; bottom:0% ; position: fixed; background-color: antiquewhite;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>logo na firma</h1>
+      <nav>
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/download/"
+          >home</a
+        >
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/download/"
+          >home</a
+        >
+        <a href="https://getbootstrap.com/docs/5.2/getting-started/download/"
+          >home</a
+        >
+      </nav>
+    </header>
+    <main>
+        <!-- prvite dve sekcii se copy paste -->
+      <section class="sectionBackgroundFirst">
+        <article class="articleNr1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint rerum
+          totam exercitationem, esse, deleniti numquam natus accusamus dolorem
+          earum iusto adipisci quia perspiciatis tempora aut voluptate optio.
+          Odit, iusto nostrum?
+        </article>
+        <article class="articleNr2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          obcaecati repellat modi tempora placeat veritatis consequatur magni.
+          Laudantium corrupti, sit perferendis reprehenderit blanditiis sequi
+          ipsum, sapiente, ut veritatis vero alias.
+        </article>
+      </section>
+      <section class="sectionBackgroundSecond">
+        <article class="naslov">naslov</article>
+        <article class="naslov2">
+          nekohj pogolem tekst Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Reiciendis ex, odio omnis veritatis officia placeat
+          sit quam excepturi sed dolor porro minima maxime quas in adipisci
+          ducimus molestias eligendi similique.
+        </article>
+        <section class="btn">
+          <button>Click</button><button>Click</button>
+        </section>
+        <section class="sectionBackgroundSecond">
+          <article class="naslov">naslov</article>
+          <article class="naslov2">
+            nekohj pogolem tekst Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Reiciendis ex, odio omnis veritatis officia
+            placeat sit quam excepturi sed dolor porro minima maxime quas in
+            adipisci ducimus molestias eligendi similique.
+          </article>
+          <section class="btn">
+            <button>Click</button><button>Click</button>
+          </section>
+<!-- section sectionBackgroundThird e izmenet bidejki e naslovot i buttonot treba da stojat obratno od sectionBackgroundSecond koj se 2 isti kopirani -->
+          <section class="sectionBackgroundThird">
+            <p class="naslovOne">naslov</p>
+            <article class="naslovTwo">
+              nekohj pogolem tekst Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Reiciendis ex, odio omnis veritatis officia
+              placeat sit quam excepturi sed dolor porro minima maxime quas in
+              adipisci ducimus molestias eligendi similique.
+            </article>
+          
+          <section class="btnSecond">
+            <button>Click</button><button>Click</button></section>
+        
+       
+        </section>
+    </main>
+
+    <footer>Dragoljub Benko</footer>
+  </body>
+</html>
