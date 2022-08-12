@@ -4,7 +4,7 @@ let city1 = "Skopje";
 let age1 = "31";
 let job1 = "student";
 
-// Objekt
+//  Objekt
 
 let user = {
   name: name1,
@@ -18,7 +18,7 @@ console.log(user);
 function myFunction() {
   alert(" Name Surname ");
 }
-// let btn = document.getElementsByTagName("button")[0];
-// btn.addEventListener("click", function () {
-//   alert("ako nema alert nema da se ukluci ");
-// });
+//  let btn = document.getElementsByTagName("button")[0];
+//  btn.addEventListener("click", function () {
+//    alert("ako nema alert nema da se ukluci ");
+//  });

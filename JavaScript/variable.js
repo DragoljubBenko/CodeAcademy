@@ -21,7 +21,7 @@ console.log(dayOfBorn + sumName + subtractYear + allNumbers);
 
 //  5 ta variabla kade sto se gleda dayOfBorn deka e pogolem od sumName i rezultatot e false
 
-let boleanVariable = true ? dayOfBorn > sumName : (boleanVariable = false);
+let boleanVariable = dayOfBorn > sumName;
 console.log(boleanVariable);
 
 //  6ta variabla e ostatokot od subtractYear i allNumbers
