@@ -29,7 +29,7 @@ console.log(boleanVariable);
 let boleanVariableDivide = subtractYear % allNumbers;
 console.log(boleanVariableDivide);
 
-//  7ma variabla
+//  7ma variabla 
 let allTogether = "I am the ";
 
 if ((boleanVariable = true && boleanVariableDivide < 3)) {
