@@ -14,3 +14,15 @@ function threeParametarsModify(AstonMartin, Bentley, NIssan) {
 
 let threeParametarsCheckModify = threeParametarsModify(9, 4, "4");
 console.log(threeParametarsCheckModify);
+
+// Function that returns 30 or 31 days in alert
+function checkEvenOrOddMonth(month) {
+  let oddMounthDays = [1, 3, 5, 7, 8, 10, 12];
+  let evenMounthDays = [4, 6, 9, 11];
+  if (oddMounthDays.includes(month)) {
+    return "31";
+  } else if (evenMounthDays.includes(month)) {
+    return "30";
+  }
+}
+alert(checkEvenOrOddMonth(10));
