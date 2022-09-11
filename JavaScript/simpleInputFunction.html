@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+                initial-scale=1.0"
+    />
+    <title>Simple Input function</title>
+   
+  <body>
+    <h1>demo</h1>
+    
+    <br /><br />
+    <div class="container">
+      <div>
+        <label>Username:</label>
+        <input type="text" id="text1" size="10" /><br>
+        <p id="errorText"></p>
+      </div><br>
+       <button type="button" onclick="errorMessages()">Submit</button>
+      <div><br>
+        <label>Phone no:</label>
+        <input type="text" id="number" size="10" /><br>
+        <p id="errorNumber"></p>
+      </div><br>
+      <button type="button" onclick="errorMessage()">Submit</button>
+      <!-- imam 2 funkcii kako da gi pratam vo edno kopce dali mozno toa?
+za da se pojavi error pod sekoe od input polinjata  -->
+    </div>
+  </body>
+  <script src="/simpleInputFunction.js">
+   
+  </script>
+</html>
