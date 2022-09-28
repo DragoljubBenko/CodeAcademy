@@ -1,76 +1,76 @@
- /* fiksen header so visina 40px i so pogolem z index bidejki sidebarot bese pred nego */
- #header {
-    background-color: aqua;
-    position: fixed;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    top: 0%;
-    left: 0%;
-    z-index: 2;
-    border: 1px solid red;
-  }
-  /* fiksen footer so visina 40 px */
-  #footer {
-    background-color: aqua;
-    position: fixed;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    bottom: 0%;
-    left: 0%;
-    border: 1px solid red;
-  }
-  /* fiksen sidebar so visina 100% za nad i pod footer i header */
-  .sidebar {
-    top: 0px;
-    position: fixed;
-    width: 200px;
-    height: 811px;
-    display: flex;
-    flex-wrap: wrap;
-    /* grid-template-columns: 20px 50px 50px; */
-    left: 0%;
-    border: 1px solid red;
-  }
-  /* nav bar e del od navigaciskoto meni za da bide pod footerot za 40px */
-  .nav-bar {
-    margin-top: 40px;
-  }
-  /* celataa pozadina na main kade sto ima class background main za da se dobie display grid.(sega display flex)
+/* fiksen header so visina 40px i so pogolem z index bidejki sidebarot bese pred nego */
+#header {
+  background-color: aqua;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  top: 0%;
+  left: 0%;
+  z-index: 2;
+  border: 1px solid red;
+}
+/* fiksen footer so visina 40 px */
+#footer {
+  background-color: aqua;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  bottom: 0%;
+  left: 0%;
+  border: 1px solid red;
+}
+/* fiksen sidebar so visina 100% za nad i pod footer i header */
+.sidebar {
+  left: 0px;
+  position: fixed;
+  width: 200px;
+  height: 811px;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 20px 50px 50px; */
+  left: 0%;
+  border: 1px solid red;
+}
+/* nav bar e del od navigaciskoto meni za da bide pod footerot za 40px */
+.nav-bar {
+  margin-top: 40px;
+}
+/* celataa pozadina na main kade sto ima class background main za da se dobie display grid.(sega display flex)
    oddeleni od top i botom kolku sto e header i footer, i dadena height 1251px bidejki tolku mi e dovolno za stranata 
    */
-  
-  .background-main {
-    background-color: brown;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    border: solid black 2px;
-    height: 1251px;
-    margin-left: 200px;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  /* section class e za imeto i slikata vo grid(sega vo flex so istite dimenzii) da gi razdelam so 112px i 132px spored Inspect Tools za da izgledaat pubavo. */
-  .section {
-    top: 0%;
-    display: flex;
-    flex-shrink: 112px 132px;
-  }
-  .bacground-text {
-    height: fit-content;
-    left: 200px;
-  }
-  
-  .bacground-title {
-    padding: 20px 20px 20px 20px;
-  }
-  
-  .alltogether {
-    background-color: aqua;
-    border: 1px solid black;
-    margin: 20px 20px 20px 20px;
-    padding: 20px 20px 20px 20px;
-  }
+
+.background-main {
+  background-color: brown;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: solid black 2px;
+  height: 1251px;
+  margin-left: 200px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* section class e za imeto i slikata vo grid(sega vo flex so istite dimenzii) da gi razdelam so 112px i 132px spored Inspect Tools za da izgledaat pubavo. */
+.section {
+  top: 0%;
+  display: flex;
+  flex-shrink: 112px 132px;
+}
+.bacground-text {
+  height: fit-content;
+  left: 200px;
+}
+
+.bacground-title {
+  padding: 20px 20px 20px 20px;
+}
+
+.alltogether {
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+}

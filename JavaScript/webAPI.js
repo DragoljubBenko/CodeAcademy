@@ -50,10 +50,15 @@ async function getText() {
 getText();
 
 async function getSecondText() {
-  let response = await fetch("wikiSecondText.txt");
-  let data = await response.text();
-  console.log(data);
+  let prevzemi = await fetch("wikiSecondText.txt");
+  let dataTekst = await prevzemi.text();
+  console.log(dataTekst);
   // da se prikaze fetch textot vo html dokumentot
   // document.getElementById("demo3").innerHTML = data;
 }
+// only for exercise random Third text
 getSecondText();
+fetch("wikiThirdText.txt")
+  .then((response) => response.text())
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));

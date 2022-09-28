@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 80px 200px auto 40px;
+        grid-template-rows: 80px 200px 30px;
+      }
+
+      .grid-item {
+        text-align: center;
+        border: 2px solid black;
+      }
+      .grid-item1 {
+        overflow-x: scroll;
+        text-align: center;
+
+        border: 2px solid black;
+        grid-column: 1/5;
+        /* grid-column-start: 1;
+         grid-column-end: 5; */
+      }
+
+      .flex-container {
+        display: flex;
+        /* gap: 20px 20px 20px; */
+        /* flex-direction: column-reverse; */
+        flex-wrap: nowrap;
+      }
+
+      .flex-item {
+        /* align-content: flex-end; */
+        text-align: center;
+        border: 2px solid black;
+        flex-grow: 1;
+      }
+
+      .flex-item1 {
+        text-align: center;
+        /* flex-flow: column wrap; */
+        flex-grow: 2;
+        align-content: center;
+        border: 2px solid black;
+
+        /* grid-column-start: 1;
+         grid-column-end: 5; */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Ova e grid layout</p>
+    <br />
+    <br />
+    <div class="grid-container">
+      <div class="grid-item1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+        debitis, dignissimos praelosentium quam asperiores harum non autem
+        numquam qui quaerat iusto facere vel aliquid culpa dolorem libero amet,
+        sapiente distinctio? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Beatae doloremque assumenda praesentium asperiores, vero amet
+        pariatur necessitatibus voluptatum cumque non officia modi quod, iure
+        rerum maxime molestiae debitis excepturi temporibus! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Nemo eum velit, minima ab iure
+        impedit exercitationem optio fuga, dolorum ex unde sit laboriosam neque
+        enim sunt. Adipisci sit animi modi. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Similique tempore ut iste distinctio
+        officia qui, eveniet repudiandae necessitatibus dolor, voluptate
+        nesciunt debitis atque incidunt animi expedita, ad mollitia rem eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fuga
+        minus, pariatur quis perferendis vitae voluptas quidem, ut obcaecati
+        quod quas amet omnis voluptatum quaerat reiciendis quae atque quasi
+        ipsa?
+      </div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+
+    <p>Ova e flex layout</p>
+    <br />
+    <br />
+    <div class="flex-container">
+      <div class="flex-item1">
+        milique tempore ut iste distinctio officia qui, eveniet repudiandae
+        necessitatibus dolor, voluptate nesciunt debitis atque incidunt animi
+        expedita, ad mollitia rem eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Blanditiis fuga minus, pariatur quis perferendis vitae
+        voluptas quidem, ut obcaecati quod quas amet omnis voluptatum quaerat
+        reiciendis quae atque quasi ipsa?
+      </div>
+      <div class="flex-item">
+        milique tempore ut iste distinctio officia qui, eveniet repudiandae
+        necessitatibus dolor, voluptate nesciunt debitis atque incidunt animi
+        expedita, ad mollitia rem eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Blanditiis fuga minus, pariatur quis perferendis vitae
+        voluptas quidem, ut obcaecati quod quas amet omnis voluptatum quaerat
+        reiciendis quae atque quasi ipsa?
+      </div>
+      <div class="flex-item">
+        milique tempore ut iste distinctio officia qui, eveniet repudiandae
+        necessitatibus dolor, voluptate nesciunt debitis atque incidunt animi
+        expedita, ad mollitia rem eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Blanditiis fuga minus, pariatur quis perferendis vitae
+        voluptas quidem, ut obcaecati quod quas amet omnis voluptatum quaerat
+        reiciendis quae atque quasi ipsa?
+      </div>
+      <div class="flex-item">
+        milique tempore ut iste distinctio officia qui, eveniet repudiandae
+        necessitatibus dolor, voluptate nesciunt debitis atque incidunt animi
+        expedita, ad mollitia rem eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Blanditiis fuga minus, pariatur quis perferendis vitae
+        voluptas quidem, ut obcaecati quod quas amet omnis voluptatum quaerat
+        reiciendis quae atque quasi ipsa?
+      </div>
+      <div class="flex-item">
+        ntium asperiores, vero amet pariatur necessitatibus voluptatum cumque
+        non officia modi quod, iure rerum maxime molestiae debitis excepturi
+        temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nemo eum velit, minima ab iure impedit exercitationem optio fuga,
+        dolorum ex unde sit laboriosam neque enim sunt. Adipisci sit animi modi.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
+        tempore ut iste distinctio
+      </div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+    </div>
+    <script>
+      // const person = { fname: "John", lname: "Doe", age: 25 };
+      // let txt = "";
+      // for (let x in person) {
+      //   txt += person[x] + "";
+      // }
+
+      // console.log(txt);
+
+      // const numbers = [45, 4, 9, 16, 25];
+      // let txt1 = "";
+      // for (let x in numbers) {
+      //   txt1 += numbers[x] + "\n";
+      // }
+      // console.log(txt1);
+
+      // const cars = [45, 4, 9, 16, 25];
+      // let text = "";
+      // for (let x of cars) {
+      //   text += x + "\n";
+      // }
+      // console.log(text); -->
+
+      // let number = 5;
+
+      // if (number == 5) {
+      //   return true;
+      // } else {
+      //   return false;
+      // } -->
+      // prompt("napisi brojka");
+
+      // prompt("napisi brojka");
+      // let number1 = 5;
+      // let testFunction4 = function () {
+      //   if (number == 5) {
+      //     alert("true");
+      //   } else {
+      //     alert("false");
+      //   }
+
+      //   console.log(testFunction4);
+      // };
+
+      // prompt("napisi brojka");
+      // let number = 5;
+      // let testFunction = () => (number == 5 ? true : false);
+      // console.log(number);
+      // let testFunction2 = (num1,num2) => num1>num2 ? alert ("pogolemo")
+      prompt("napisi brojka");
+      let number = 5;
+      function myFunction() {
+        if (number < 5) return "tocno";
+      }
+      console.log(myFunction);
+
+      // let user = prompt("yes,no or cancel")
+      // if (user!==null){
+      //   if (user[0].toLowerCase()==='y')}
+      //   console.log(yes)
+
+      // }
+    </script>
+  </body>
+</html>
